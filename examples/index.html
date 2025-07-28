@@ -6,10 +6,10 @@
   </head>
   <body style="margin: 0">
     <script type="module">
-      import { AudioPlayer } from "/index.js";
+      import { AudioPreview } from "/index.js";
 
       (async () => {
-        customElements.define("audio-preview", AudioPlayer);
+        customElements.define("audio-preview", AudioPreview);
 
         const el = document.createElement("audio-preview");
         el.setAttribute("height", "100vh");

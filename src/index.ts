@@ -12,7 +12,7 @@ import "media-chrome";
  * # Examples
  *
  * ```handle
- * audio-player/AudioPlayer(file = @file("sample.mp3"))
+ * audio-preview/AudioPlayer(file = @file("sample.mp3"))
  * ```
  */
 export class AudioPlayer extends HTMLElement {

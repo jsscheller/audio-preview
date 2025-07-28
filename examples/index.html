@@ -9,12 +9,12 @@
       import { AudioPlayer } from "/index.js";
 
       (async () => {
-        customElements.define("audio-player", AudioPlayer);
+        customElements.define("audio-preview", AudioPlayer);
 
-        const player = document.createElement("audio-player");
-        player.setAttribute("height", "100vh");
-        player.file = await fetch("/examples/sample.mp3").then((x) => x.blob());
-        document.body.append(player);
+        const el = document.createElement("audio-preview");
+        el.setAttribute("height", "100vh");
+        el.file = await fetch("/examples/sample.mp3").then((x) => x.blob());
+        document.body.append(el);
       })();
     </script>
   </body>

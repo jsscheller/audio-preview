@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsscheller/audio-preview.git"
+  },
+  "bugs": "https://github.com/jsscheller/audio-preview/issues",
+  "forum": "https://github.com/jsscheller/audio-preview/discussions",
+  "devDependencies": {
+    "esbuild": "^0.21.2",
+    "media-chrome": "^4.7.1",
+    "runish": "^0.1.0",
+    "serdev": "^0.1.0",
+    "typescript": "^5.3.3"
+  }
+}

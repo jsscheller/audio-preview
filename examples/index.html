@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  </head>
+  <body style="margin: 0">
+    <script type="module">
+      import { AudioPlayer } from "/index.js";
+
+      (async () => {
+        customElements.define("audio-player", AudioPlayer);
+
+        const player = document.createElement("audio-player");
+        player.setAttribute("height", "100vh");
+        player.file = await fetch("/examples/sample.mp3").then((x) => x.blob());
+        document.body.append(player);
+      })();
+    </script>
+  </body>
+</html>
